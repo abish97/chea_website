@@ -40,8 +40,8 @@
             <ul class="dropdown-menu">
               <li><a href="{% url 'Chemical' %}">What is Chemical Engineering?</a></li>
               <li><a href="{% url 'aboutchea'%}">What is Chea and IIche?</a></li>
-              <!-- <li role="separator" class="divider"></li> -->
-              <!-- <li><a href="#">Photo Gallery</a></li> -->
+              <li role="separator" class="divider"></li>
+              <li><a href="{% url 'photo'%}">Photo Gallery</a></li>
 
             </ul>
             </li>
@@ -243,7 +243,7 @@
                 <p class="foryear">For: 2<sup>nd</sup> and 3<sup>rd</sup> years</p>
                 <br>
                 <p class="date">21<sup>st</sup>October,2018</p>
-                <p class="evetname">INDUSTRIAL TOUR TO ITC, BHADRACHALAM</p>
+                <a href = "{% url 'itc' %}"><p class="evetname">INDUSTRIAL TOUR TO ITC, BHADRACHALAM</p></a>
                 <p class="subhe">SESSION 1</p>
                 <p class="foryear">For: 2<sup>nd</sup> years</p>
                 <br>

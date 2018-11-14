@@ -55,7 +55,7 @@
 
 .navbar-default .navbar-brand {
   font-size:40px;
-  font-weight: lighter;
+  font-weight: bolder;
   color:#bb7ebc;
   font-family: 'Lato', sans-serif;
   float: left;
@@ -63,7 +63,9 @@
   padding-left: 23px;
   transition: ease-in-out 0.3s;
 }
-
+.dates{
+  font-weight: bold;
+}
 .navbar-default .navbar-brand:hover{
   transform: scale(1.02);
 }

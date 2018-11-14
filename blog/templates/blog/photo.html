@@ -1,0 +1,385 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{%static 'images/icon.ico' %}" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/photo-gallery.css'%}">
+    <link rel="stylesheet" href="{% static 'css/news.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            ChEA|IIChE
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{% url 'Chemical' %}">What is Chemical Engineering?</a></li>
+            <li><a href="{% url 'aboutchea'%}">What is Chea and IIche?</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{% url 'photo'%}">Photo Gallery</a></li>
+
+          </ul>
+          </li>
+          <li><a href="{% url 'news' %}">EVENTS</a></li>
+        <!-- <li><a href="{% url 'intern' %}">INTERNSHIPS AND PLACEMENTS</a></li> -->
+          <li><a href="{% url 'post_list' %}">TECH BLOG</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TEAM<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'cheateam17' %}" target="_blank">2017-18</a></li>
+              <li><a href="{% url 'team' %}" target="_blank">2018-19</a></li>
+              <!-- <li><a href="{% url 'iicheteam' %}" target="_blank">IIche 18-19</a></li> -->
+
+              <!-- <li><a href="{% url 'iicheteam17' %}" target="_blank">IIche 17-18</a></li> -->
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          {% if user.is_authenticated %}
+          <li>
+            <a href="{% url 'post_new' %}" >NEW POST</a>
+          </li>
+
+          <li>
+            <a href="{% url 'post_draft_list' %}">DRAFTS</a>
+          </li>
+          <li>
+            <a href="{% url 'logout' %}" >LOG OUT</a>
+          </li>
+
+          <li>
+            <a >WELCOME: {{ user.username }}</a>
+          </li>
+            {% else %}
+            <!-- <li><a class='nav navbar-right' href="{% url 'login' %}" ><span class="glyphicon glyphicon-user"></span></a></li> -->
+          {% endif %}
+
+        </ul>
+    </div>
+  </nav>
+  </div>
+  <br><br>
+    <h2 style="text-align:center">Ansys Workshop</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="{%static 'images/awork/1.jpg'%}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/2.jpg'%}" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/3.jpg'%}" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/4.jpg'%}" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/5.jpg'%}" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/6.jpg'%}" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/7.jpg'%}" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/8.jpg'%}" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/9.jpg'%}" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/awork/10.jpg'%}" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      </div>
+    </div>
+    <br><br>
+    <h2 style="text-align:center">Chemorphous</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="{%static 'images/chemorphous/1.jpg'%}" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/chemorphous/2.jpg'%}" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/chemorphous/3.jpg'%}" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/chemorphous/4.jpg'%}" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/chemorphous/5.jpg'%}" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/chemorphous/6.jpg'%}" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/chemorphous/7.jpg'%}" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/chemorphous/8.jpg'%}" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+      </div>
+    </div>
+    <br><br>
+    <h2 style="text-align:center">Inaugration Ceremony 2018</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="{%static 'images/inaugural/1.jpg'%}" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/2.jpg'%}" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/3.jpg'%}" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/4.jpg'%}" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/5.jpg'%}" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/6.jpg'%}" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/7.jpg'%}" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/8.jpg'%}" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="{%static 'images/inaugural/9.jpg'%}" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+      </div>
+
+    </div>
+
+    <!-- <h2 style="text-align:center">Inaugration Ceremony 2017</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="inaug17/1.JPG" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="inaug17/2.JPG" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="inaug17/3.JPG" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="inaug17/4.JPG" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="inaug17/5.JPG" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="inaug17/6.JPG" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="inaug17/7.JPG" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+      </div> -->
+
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <div class="mySlides">
+          <img src="{%static 'images/awork/1.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+          <img src="{%static 'images/awork/2.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+          <img src="{%static 'images/awork/3.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+          <img src="{%static 'images/awork/4.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/awork/5.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/awork/6.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/awork/7.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/awork/8.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/awork/9.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/awork/10.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/1.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/2.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/3.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/4.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/5.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/6.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/7.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/chemorphous/8.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/1.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/2.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/3.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/4.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/5.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/6.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/7.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/8.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="{%static 'images/inaugural/9.jpg'%}" style="width:700px;height: 440px;">
+        </div>
+
+        <div class="mySlides">
+            <img src="inaug17/1.JPG" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="inaug17/2.JPG" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="inaug17/3.JPG" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="inaug17/4.JPG" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="inaug17/5.JPG" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="inaug17/6.JPG" style="width:700px;height: 440px;">
+        </div>
+        <div class="mySlides">
+            <img src="inaug17/7.JPG" style="width:700px;height: 440px;">
+        </div>
+
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div class="foot">
+      <p>Chemical Engineering Department</p>
+      <p>National Institute of Technology, Warangal</p>
+      <p>&copy;&ensp;Kumar Abhishek & Shreyans Jain</p>
+    </div>
+    <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <script
+    src="http://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>  <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>

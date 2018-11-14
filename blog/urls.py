@@ -30,4 +30,6 @@ urlpatterns = [
     url(r'^quiz/$', views.quiz, name='quiz'),
     url(r'^piction/$', views.piction, name='piction'),
     url(r'^sports/$', views.sports, name='sports'),
+    url(r'^photo/$', views.photo, name='photo'),
+    url(r'^itc/$', views.itc, name='itc'),
 ]

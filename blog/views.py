@@ -124,4 +124,8 @@ def quiz(request):
 def piction(request):
     return render(request, 'blog/piction.html')
 def sports(request):
-    return render(request, 'blog/sports.html')  
+    return render(request, 'blog/sports.html')
+def photo(request):
+    return render(request, 'blog/photo.html')
+def itc(request):
+    return render(request, 'blog/itc.html')
