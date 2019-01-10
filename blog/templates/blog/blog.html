@@ -7,8 +7,9 @@
       <meta http-equiv="X-UA-Compatible" content="" ie=edge">
 
       <!-- Start Slider HEAD section --> <!-- add to the <head> of your page -->
-      <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}" />
 
+      <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+      <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
       <!-- End Slider HEAD section -->
 
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -32,8 +33,6 @@
 
         {# Custom CSS#}
 
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-
         {# Fonts#}
         <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
@@ -42,10 +41,12 @@
         <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       	<!-- <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Overlock+SC" rel="stylesheet"> -->
-<body style="background-color:transparent;margin:auto">
+<body>
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -57,7 +58,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/">
-          ChEA|IIChE
+          <img id="navimg" src="{%static 'images/main.jpg' %}"><h1 id="navwo">|IIChE</h3>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -139,19 +140,20 @@
       </header>
       <section class="lower-box">
         <div class="blog item">
-          <div><span class="headings ho">Tech Blog</span><span><i class="fab fa-blogger-b fa-4x ho"></i></span></div>
+          <div><span class="headings_ho">Tech Blog</span><span><i class="fab fa-blogger-b fa-4x ho"></i></span></div>
           <p class="chem">Blog series which addresses intriguing topics of chemical engineering. Blogs are contributed by the students, faculty and alumni of chemical engineering department.<br><a class="link" href="{% url 'post_list' %}"style="text-decoration:none;">Read more >></a></p>
         </div>
         <div class="chem-engg item">
-            <div id="chem-engg"><span class="headings ho" id="chem-engg-heading">What is Chemical Engineering?</span></div>
+            <div id="chem-engg"><span class="headings_ho" >What is Chemical Engineering?</span></div>
             <p class="chem">Chemical engineering occupies a unique position at the interface between molecular sciences and engineering. Intimately linked with the fundamental subjects of chemistry, biology, mathematics, and physics — and... <br> <a href="{% url 'Chemical' %}" style="text-decoration:none;">Read more >></a></p></div>
         <div class="iiche item">
-            <div><span class="headings ho">IICHE</span><i class="fas fa-user-graduate fa-3x ho"></i></div>
+            <div><span class="headings_ho">IICHE</span><i class="fas fa-user-graduate fa-3x ho"></i></div>
             <p class="chem">Indian Institute of Chemical Engineers, its an organization which was established years ago to conduct events related to chemical engineering field for chemical engineering undergraduate students, post graduate students and people related to chemical engineering<br> <a href="{% url 'aboutchea'%}" style="text-decoration:none;">Read more >></a></p></div>
       </section>
     </div>
     <div class="right-container-1">
-      <div class="event-heading"><span id="event-heading" class="headings">Events 2018-19</span><i class="far fa-calendar-alt fa-3x" style="color:white"></i> </div>
+      <!-- <div class="event-heading"><span id="event-heading" class="headings headings_ho">Events 2018-19</span><i class="far fa-calendar-alt fa-3x" style="color:white"></i> </div> -->
+      <div><span class="headings_ho">Events 18-19</span></div>
       <div>
         <p class="eventbox-style">Know Your Branch <span class="dates">25th&nbsp;July</span></p>
         <p class="eventbox-style">Intern Connect <span class="dates">9th&nbsp;August</span></p>
@@ -167,10 +169,10 @@
   </section>
   <section class="bottom-container">
     <div class="interview item">
-        <div><span class="headings ho">Interview / Intern Talks</span></div>
-    <p class="chem">Interviews of students who have pursued internships at various reputed industries and universities around the globe.<br><a class="link" href="{% url 'intern' %}"style="text-decoration:none;">Read more >></a></p></div>
+        <div><span class="headings_ho">Interview / Intern Talks</span></div>
+    <p class="chem">Interviews of students who have pursued internships at various reputed industries and universities around the globe.<br>Read more >></p></div>
     <div class="team ri">
-        <div><span class="headings ho">About Us</span><i class="fas fa-users fa-3x ho"></i></div>
+        <div><span class="headings_ho">About Us</span><i class="fas fa-users fa-3x ho"></i></div>
       <p class="chem">ChEA and IIChE student chapters are student-faculty bodies that thrive to inculcate learning culture among peers and represent the department at a national and global level.<br><a class="link" target="_blank" href="{% url 'team' %}"style="text-decoration:none;">Read more >></a></p></div>
   </section>
   <div class="foot">

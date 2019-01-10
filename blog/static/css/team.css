@@ -8,20 +8,28 @@
   width: 24%;
   float: left;
   height: 2000px;
-  background-color: #6771e5;
+  background-color: #FEE7E3;
   padding-left: 10px;
   padding-top: 0px;
   font-size: 20px;
   font-family:'Crimson Text', serif;
 }
-
+body{
+  background:url('https://raw.githubusercontent.com/abish97/chea/master/imageedit_6_8032774094.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100%;
+}
 .content{
   padding-bottom: 20px;
+  font-family: 'Staatliches', cursive;
 }
 .link{
   border-top: 4px dotted white;
   font-size: 30px;
-  font-family:'Crimson Text', serif;
+  font-family: 'Staatliches', cursive;
+  text-decoration: underline;
   padding-left: 30px;
   padding-top:10px;
   list-style: none;
@@ -48,7 +56,8 @@ a{
 .main{
   letter-spacing: 40px;
   font-size: 80px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Staatliches', cursive;
+  color: #FEE7E3  ;
 }
 .sub{
   font-size: 16px;
@@ -59,21 +68,30 @@ a{
   margin-top: 2640px;
   margin-left: 700px;
   font-size:40px;
-  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 5px;
+  font-family: 'Staatliches', cursive;
+  color: #FEE7E3  ;
+    text-decoration: underline;
 }
 .header1{
   position: absolute;
   margin-top: 80px;
   margin-left: 700px;
   font-size:40px;
-  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 5px;
+  font-family: 'Staatliches', cursive;
+  color: #FEE7E3  ;
+    text-decoration: underline;
 }
 .header2{
   position: absolute;
   margin-top: 700px;
   margin-left: 700px;
   font-size:40px;
-  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 5px;
+  font-family: 'Staatliches', cursive;
+  color: #FEE7E3  ;
+  text-decoration: underline;
 }
 .box1{
   position: relative;
@@ -433,8 +451,8 @@ a{
 .foot{
   margin-top: 3500px;
   text-align: center;
-  color: #a6b1c1;
-  font-family: 'Unica One', cursive;
+  font-family: 'Staatliches', cursive;
+  color: #FEE7E3  ;
   font-size: 16px;
   margin-left: 290px;
 }

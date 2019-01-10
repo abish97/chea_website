@@ -2,6 +2,13 @@
   margin: 0px;
   padding: 0px;
 }
+.headings_ho{
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  font-size: 36px;
+   letter-spacing: 3px;
+   word-spacing: 2px;
+}
 
 .techfont{
   font-family: 'Open Sans', sans-serif;
@@ -117,4 +124,18 @@
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
   color:#18cee2;
+}
+.navbar-nav{
+  padding-bottom: 10px;
+}
+#navimg{
+  height: 60px;
+  width: 60px;
+  margin-top: -20px;
+}
+#navwo{
+  margin-top: -45px;
+  margin-left: 60px;
+  font-weight: 570;
+  color: #862d86;
 }

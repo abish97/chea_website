@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="{% static 'css/news.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <!-- <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
@@ -17,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -30,7 +33,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-              ChEA|IIChE
+              <img id="navimg" src="{%static 'images/main.jpg' %}"><h1 id="navwo">|IIChE</h3>
             </a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -84,6 +87,9 @@
       </div>
     </nav>
     </div>
+
+
+
     <div class="container">
       <!-- <div class="eve">
         <h5>[ EVENTS ]</h5>
@@ -201,12 +207,12 @@
                 <p class="foryear">For: 1<sup>st</sup> years</p>
                 <br>
                 <p class="date">10<sup>th</sup>January,2017</p>
-                <a href = "{% url 'quote' %}"><p class="evetname">QUOTE A TEE COMPETITION </p></a>
+                <a class="actlinks" href = "{% url 'quote' %}"><p class="evetname">QUOTE A TEE COMPETITION </p></a>
                 <p class="subhe"></p>
                 <p class="foryear">For all years</p>
                 <br>
                 <p class="date">31<sup>st</sup>January,2017</p>
-                <a href = "{% url 'philia' %}"><p class="evetname">CHEM-O-PHILIA</p></a>
+                <a class="actlinks" href = "{% url 'philia' %}"><p class="evetname">CHEM-O-PHILIA</p></a>
                 <p class="subhe"></p>
                 <p class="foryear">For all years</p>
                 <br>
@@ -223,7 +229,7 @@
               </div>
               <div class="thirdlist">
                 <p class="date">28<sup>th</sup>February,2017</p>
-                <a href="{% url 'quiz' %}"><p class="evetname">QUIZ COMPETITION</p></a>
+                <a class="actlinks" href="{% url 'quiz' %}"><p class="evetname">QUIZ COMPETITION</p></a>
                 <p class="subhe"></p>
                 <p class="foryear">For all years</p>
                 <br>
@@ -233,17 +239,17 @@
                 <p class="foryear">For all years</p>
                 <br>
                 <p class="date">20<sup>th</sup>March,2017</p>
-                <a href="{% url 'piction' %}"><p class="evetname">PICTION IT</p></a>
+                <a class="actlinks" href="{% url 'piction' %}"><p class="evetname">PICTION IT</p></a>
                 <p class="subhe"></p>
                 <p class="foryear">For all years and all branches</p>
                 <br>
                 <p class="date">22<sup>nd</sup>March,2017</p>
-                <a href = "{% url 'placement' %}"><p class="evetname">PLACEMENT TALK</p></a>
+                <a class="actlinks" href = "{% url 'placement' %}"><p class="evetname">PLACEMENT TALK</p></a>
                 <p class="subhe">SESSION 1</p>
                 <p class="foryear">For: 2<sup>nd</sup> and 3<sup>rd</sup> years</p>
                 <br>
                 <p class="date">21<sup>st</sup>October,2018</p>
-                <a href = "{% url 'itc' %}"><p class="evetname">INDUSTRIAL TOUR TO ITC, BHADRACHALAM</p></a>
+                <a class="actlinks" href = "{% url 'itc' %}"><p class="evetname">INDUSTRIAL TOUR TO ITC, BHADRACHALAM</p></a>
                 <p class="subhe">SESSION 1</p>
                 <p class="foryear">For: 2<sup>nd</sup> years</p>
                 <br>
@@ -258,7 +264,7 @@
                 <p class="foryear">For 3<sup>rd</sup> years</p>
                 <br>
                 <p class="date">24<sup>th</sup>and 25<sup>th</sup> March,2018</p>
-                <a href = "{% url 'sports' %}"><p class="evetname">SPORTS WEEK </p></a>
+                <a class="actlinks" href = "{% url 'sports' %}"><p class="evetname">SPORTS WEEK </p></a>
                 <p class="subhe"></p>
                 <p class="foryear">For all years</p>
                 <br>
@@ -287,9 +293,7 @@
         </div>
 
       </div>
-
     </div>
-
 
     <script
     src="http://code.jquery.com/jquery-3.1.1.js"

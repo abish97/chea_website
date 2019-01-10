@@ -4,15 +4,54 @@
   color: #b0b0ba;
   font-family: 'Sorts Mill Goudy', serif;
 }
+body{
+  background:url('https://raw.githubusercontent.com/abish97/chea/master/imageedit_2_6140371352.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100%;
+}
+
 .evetname{
   margin-top: -10px;
   word-spacing: 5px;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #0525F5;
+}
+.navbar-nav{
+  padding-bottom: 10px;
+}
+#navimg{
+  height: 60px;
+  width: 60px;
+  margin-top: -20px;
+}
+#navwo{
+  margin-top: -45px;
+  margin-left: 60px;
+  font-weight: 570;
+  color: #862d86;
 }
 .subhe{
   margin-top: -10px;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: bold;
+    color: #429EF4  ;
+}
+.actlinks{
+  text-decoration: underline;
+  transition-delay: 250ms;
+}
+.actlinks :hover{
+  transform: scale(1.1);
 }
 .foryear{
   margin-top: -10px;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: bold;
+    color: #429EF4  ;
 }
 .calendar{
   font-size: 100px;
@@ -22,7 +61,7 @@
   margin-left: 100px;
   margin-top: 80px;
   color: #b0b0ba;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: 'Libre Barcode 128 Text', cursive;
 }
 .firstlist{
   margin-left: 390px;
@@ -42,6 +81,7 @@
   position: absolute;
   margin-top: 93px;
 }
+
 .secondph{
   position: absolute;
   margin-top: 640px;

@@ -1,6 +1,11 @@
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
+    background:url('https://raw.githubusercontent.com/abish97/chea/master/imageedit_1_6588813014.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100%;
   }
 
   * {
@@ -218,7 +223,20 @@ body {
     font-size: 16px;
   }
   h2{
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
-    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  #navimg{
+    height: 60px;
+    width: 60px;
+    margin-top: -20px;
+  }
+  #navwo{
+    margin-top: -45px;
+    margin-left: 60px;
+    font-weight: 570;
+    color: #862d86;
   }

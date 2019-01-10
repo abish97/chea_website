@@ -9,13 +9,13 @@ html {
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 	color: var(--dark);
-    background: linear-gradient(to bottom, #ffffcc 0%, #006666 100%);
 }
-
 body {
-	background:	#ccc;
-	margin: 30px 50px;
-	line-height: 1.4;
+  background:url('https://raw.githubusercontent.com/abish97/chea/master/backgroun%20bjnd.jpg');
+  background-repeat:no-repeat;
+	background-position: top;
+  background-size: cover;
+  height: 100%;
 }
 
 img {
@@ -45,7 +45,7 @@ img {
   margin-top: 100px;
   text-align: center;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Staatliches', cursive;
   font-size: 16px;
 }
 .page{
@@ -79,6 +79,9 @@ img {
 }
 .chem{
 	font-size: 18px;
+	font-family: 'Thasadith', sans-serif;
+	font-weight: bold;
+	color: #8B8783;
 }
 .chem-engg {
 	grid-area: chem-engg;
@@ -125,6 +128,10 @@ img {
 	border-bottom: 1px solid #999999;
 	min-height: 3rem;
 	font-size: 20px;
+	font-family: 'Thasadith', sans-serif;
+	font-weight: bold;
+	color: #8B8783;
+	font-size: 24px;
 }
 .link{
 	margin-top: 20px;
@@ -132,7 +139,8 @@ img {
 }
 .dates {
 	font-size: 1rem;
-	color: #999999;
+	color: #312F2E;
+	font-style: italic;
 	font-family: 'Open Sans', sans-serif;
 }
 

@@ -2,6 +2,17 @@
   margin: 0px;
   padding: 0px;
 }
+#navimg{
+  height: 60px;
+  width: 60px;
+  margin-top: -20px;
+}
+#navwo{
+  margin-top: -45px;
+  margin-left: 60px;
+  font-weight: 570;
+  color: #862d86;
+}
 .rightbar{
   width:35%;
   float: right;
@@ -29,13 +40,22 @@
 }
 .articleheading{
   margin-top: -20px;
-  background-color: rgb(85, 85, 209)
+  background-color:#22079C  ;
+}
+.start{
+  font-size: 24px;
+}
+.iichead{
+  font-size: 36px;
+
 }
 .con{
   text-align: justify;
   margin-left: 6px;
+  color: #3D3A4A  ;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: bold;
   margin-right: 4px;
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
 .what{
@@ -43,11 +63,13 @@
   padding-bottom: 20px;
   text-align: center;
   color: white;
-    font-family: 'Permanent Marker', cursive;
-  font-size: 50px;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+    font-size: 40px;
 }
 body{
-  background:url('http://s3.amazonaws.com/libapps/customers/2221/images/agap2_technologies-5-1920-1080.jpg');
+  background:url('https://raw.githubusercontent.com/abish97/chea/master/agap2_technologies-5-1920-1080-min.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
