@@ -24,7 +24,7 @@
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     color: black;
-    text-shadow: 1px 1px 1px blue;
+    text-shadow: 1px 1px 1px white;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
