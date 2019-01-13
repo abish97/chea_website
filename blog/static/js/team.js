@@ -50,7 +50,7 @@ var revert3 = function(){
 }
 var change4 = function(){
   $('.box4 .el').css("opacity", "0.0");
-  $('.box4').css("background", "url(https://raw.githubusercontent.com/abish97/chea_website/master/blog/static/images/6.jpeg)");
+  $('.box4').css("background", "url(https://raw.githubusercontent.com/skull-Knight/chea_website.github.io/master/blog/templates/pic04.jpg)");
   $('.box4 .number').css("opacity", "0.0");
   $('.box4').css("background-repeat","no-repeat")
   $('.box4 .name').css("color", "white");
@@ -206,7 +206,7 @@ var revert12 = function(){
 }
 var change13 = function(){
   $('.box13 .el').css("opacity", "0.0");
-  $('.box13').css("background", "url(https://raw.githubusercontent.com/abish97/chea/master/12.jpg)");
+  $('.box13').css("background", "url(https://raw.githubusercontent.com/skull-Knight/chea_website.github.io/master/blog/templates/pic13.jpg)");
   $('.box13 .number').css("opacity", "0.0");
 
   $('.box13 .name').css("color", "white");
@@ -223,7 +223,7 @@ var revert13 = function(){
 }
 var change14 = function(){
   $('.box14 .el').css("opacity", "0.0");
-  $('.box14').css("background", "url(https://raw.githubusercontent.com/abish97/chea/master/12.jpg)");
+  $('.box14').css("background", "url(https://raw.githubusercontent.com/skull-Knight/chea_website.github.io/master/blog/templates/pic14.jpg)");
   $('.box14 .number').css("opacity", "0.0");
 
   $('.box14 .name').css("color", "white");
@@ -264,6 +264,7 @@ var change16 = function(){
   $('.box16 .position').css("color", "white");
   $('i').css("opacity", "1.0");
 }
+
 var revert16 = function(){
   $('.box16 .el').css("opacity", "1.0");
   $('.box16').css("background", "none");
@@ -339,4 +340,154 @@ var revert20 = function(){
 
   $('.box20 .name').css("color", "black");
   $('.box20 .position').css("color", "black");
+}
+var change21 = function(){
+  $('.box21 .el').css("opacity", "0.0");
+  $('.box21').css("background", "url(https://github.com/skull-Knight/chea_website.github.io/blob/master/blog/static/css/pic21.jpg)");
+  $('.box21 .number').css("opacity", "0.0");
+  $('.box21 .name').css("color", "white");
+  $('.box21 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert21 = function(){
+  $('.box21 .el').css("opacity", "1.0");
+  $('.box21').css("background", "none");
+  $('.box21 .number').css("opacity", "1.0");
+  $('.box21 .name').css("color", "black");
+  $('.box21 .position').css("color", "black");
+}
+var change22 = function(){
+  $('.box22 .el').css("opacity", "0.0");
+  $('.box22').css("background", "url(https://raw.githubusercontent.com/skull-Knight/chea_website.github.io/master/blog/templates/pic22.jpg)");
+  $('.box22 .number').css("opacity", "0.0");
+  $('.box22 .name').css("color", "white");
+  $('.box22 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert22 = function(){
+  $('.box22 .el').css("opacity", "1.0");
+  $('.box22').css("background", "none");
+  $('.box22 .number').css("opacity", "1.0");
+  $('.box22 .name').css("color", "black");
+  $('.box22 .position').css("color", "black");
+}
+var change23 = function(){
+  $('.box23 .el').css("opacity", "0.0");
+  $('.box23').css("background", "url()");
+  $('.box23 .number').css("opacity", "0.0");
+  $('.box23 .name').css("color", "white");
+  $('.box23 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert23 = function(){
+  $('.box23 .el').css("opacity", "1.0");
+  $('.box23').css("background", "none");
+  $('.box23 .number').css("opacity", "1.0");
+  $('.box23 .name').css("color", "black");
+  $('.box23 .position').css("color", "black");
+}
+var change24 = function(){
+  $('.box24 .el').css("opacity", "0.0");
+  $('.box24').css("background", "url(https://raw.githubusercontent.com/skull-Knight/chea_website.github.io/master/blog/templates/pic24.jpg)");
+  $('.box24 .number').css("opacity", "0.0");
+  $('.box24 .name').css("color", "white");
+  $('.box24 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert24 = function(){
+  $('.box24 .el').css("opacity", "1.0");
+  $('.box24').css("background", "none");
+  $('.box24 .number').css("opacity", "1.0");
+  $('.box24 .name').css("color", "black");
+  $('.box24 .position').css("color", "black");
+}
+var change25 = function(){
+  $('.box25 .el').css("opacity", "0.0");
+  $('.box25').css("background", "url(https://github.com/skull-Knight/chea_website.github.io/blob/master/blog/static/css/pic25.jpg)");
+  $('.box25 .number').css("opacity", "0.0");
+  $('.box25 .name').css("color", "white");
+  $('.box25 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert25 = function(){
+  $('.box25 .el').css("opacity", "1.0");
+  $('.box25').css("background", "none");
+  $('.box25 .number').css("opacity", "1.0");
+  $('.box25 .name').css("color", "black");
+  $('.box25 .position').css("color", "black");
+}
+var change26 = function(){
+  $('.box26 .el').css("opacity", "0.0");
+  $('.box26').css("background", "url(https://raw.githubusercontent.com/skull-Knight/chea_website.github.io/master/blog/templates/pic26.jpg)");
+  $('.box26 .number').css("opacity", "0.0");
+  $('.box26 .name').css("color", "white");
+  $('.box26 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert26 = function(){
+  $('.box26 .el').css("opacity", "1.0");
+  $('.box26').css("background", "none");
+  $('.box26 .number').css("opacity", "1.0");
+  $('.box26 .name').css("color", "black");
+  $('.box26 .position').css("color", "black");
+}
+var change27 = function(){
+  $('.box27 .el').css("opacity", "0.0");
+  $('.box27').css("background", "url(https://github.com/skull-Knight/chea_website.github.io/blob/master/blog/static/css/pic27.jpg)");
+  $('.box27 .number').css("opacity", "0.0");
+  $('.box27 .name').css("color", "white");
+  $('.box27 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert27 = function(){
+  $('.box27 .el').css("opacity", "1.0");
+  $('.box27').css("background", "none");
+  $('.box27 .number').css("opacity", "1.0");
+  $('.box27 .name').css("color", "black");
+  $('.box27 .position').css("color", "black");
+}
+var change28 = function(){
+  $('.box28 .el').css("opacity", "0.0");
+  $('.box28').css("background", "url(https://raw.githubusercontent.com/skull-Knight/chea_website.github.io/master/blog/s.jpg)");
+  $('.box28 .number').css("opacity", "0.0");
+  $('.box28 .name').css("color", "white");
+  $('.box28 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert28 = function(){
+  $('.box28 .el').css("opacity", "1.0");
+  $('.box28').css("background", "none");
+  $('.box28 .number').css("opacity", "1.0");
+  $('.box28 .name').css("color", "black");
+  $('.box28 .position').css("color", "black");
+}
+var change29 = function(){
+  $('.box29 .el').css("opacity", "0.0");
+  $('.box29').css("background", "url(https://github.com/skull-Knight/chea_website.github.io/blob/master/blog/static/css/29.jpg)");
+  $('.box29 .number').css("opacity", "0.0");
+  $('.box29 .name').css("color", "white");
+  $('.box29 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert29 = function(){
+  $('.box29 .el').css("opacity", "1.0");
+  $('.box29').css("background", "none");
+  $('.box29 .number').css("opacity", "1.0");
+  $('.box29 .name').css("color", "black");
+  $('.box29 .position').css("color", "black");
+}
+var change30 = function(){
+  $('.box30 .el').css("opacity", "0.0");
+  $('.box30').css("background", "url(https://raw.githubusercontent.com/abish97/chea/master/12.jpg)");
+  $('.box30 .number').css("opacity", "0.0");
+  $('.box30 .name').css("color", "white");
+  $('.box30 .position').css("color", "white");
+  $('i').css("opacity", "1.0");
+}
+var revert30 = function(){
+  $('.box30 .el').css("opacity", "1.0");
+  $('.box30').css("background", "none");
+  $('.box30 .number').css("opacity", "1.0");
+  $('.box30 .name').css("color", "black");
+  $('.box30 .position').css("color", "black");
 }

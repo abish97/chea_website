@@ -9,7 +9,9 @@
    letter-spacing: 3px;
    word-spacing: 2px;
 }
-
+.newpo{
+    font-family: 'Staatliches', cursive; 
+}
 .techfont{
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
